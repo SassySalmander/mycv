@@ -1,0 +1,88 @@
+ /* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .bio-box p{
+    line-height: 20px;
+  }
+ 
+}
+
+@media only screen and (min-width:769px){
+  .bio-box p{
+    line-height: 25px;
+  }
+  .base-box{
+   margin-top: 50px;
+  }
+  .academic-box{
+    margin-top: 56px;
+  }
+  .project-box{
+    margin-top: 56px;
+  }
+  .view-school-box{
+     margin-top: 56px;
+  }
+  .set-margin{
+    margin-top: 50px;
+  }
+}
+.school-box{
+  text-align: center;
+}
+.school-box p{
+  margin-bottom: 2px;
+}
+.black-banner{
+  background-color: black;
+color: white;
+}
+.no-padding-left{
+  padding-left: 0;
+}
+.black-banner p{
+  padding-top:2%;
+  padding-bottom: 2%;
+  padding-left: 2%; 
+}
+.base-box{
+ font-family: 'kalam', cursive;
+}
+.img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.img-box{
+  background: -webkit-linear-gradient(to top, #000000 47%, #ffffff 47%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to top, #000000 47%, #ffffff 47%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to top, #000000 47%, #ffffff 47%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, #000000 47%, #ffffff 47%); /* Standard syntax */
+  
+  
+}
+.red{
+  color:red;
+}
+.table{
+  margin-bottom: 0px;
+}
+.click-for-more{
+  margin-bottom: 5px;
+}
+.bio-box p{
+    font-size: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: left;
+        padding-top: 4%;
+    padding-bottom: 4%;
+}
+.data-box{
+  background-color: black;
+  color: white;
+
+}
+.data-box p{
+	
+	font-size: 15px;
+}
