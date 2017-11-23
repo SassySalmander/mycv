@@ -6,47 +6,59 @@ import Skill from './Skill'
 import Project from './Project'
 import ExtraCurricular from './ExtraCurricular'
 import ViewSchool from './ViewSchool'
+import ViewProj from './ViewProj'
 
-function Greeting(props) {
+function CondRend(props) {
   const showEdDetail = props.showEdDetail;
-  if (showEdDetail) {
+  const showprojDetail = props.showprojDetail;
+  if (showEdDetail==false && showprojDetail==0) {
     return (<div>
        <div className="col-md-4 col-sm-4 col-xs-12">
        <Academics showDet={props.showDet}/>
        <Skill />
     
        </div>
-          <div className="col-md-4 col-sm-4 col-xs-12"><Project />
+          <div className="col-md-4 col-sm-4 col-xs-12"><Project showProj={props.showProj} />
           <ExtraCurricular />
           </div></div>);
   }
-  else
+  else if(showprojDetail!=0 ){
+    return(<div><div className="col-md-8 col-sm-8 col-xs-12"><ViewProj showProj={props.showProj} showprojDetail={props.showprojDetail}/></div></div>);
+  }
+  else(showEdDetail==true)
     return(<div><div className="col-md-8 col-sm-8 col-xs-12"><ViewSchool hideDet={props.hideDet}/></div></div>);
-}
+  }
+
 
 class Cv extends Component {
     constructor(props){
     super(props);
     this.state=({
-      showEdDetail: true,
-      showprojDetail: false,
+      showEdDetail: false,
+      showprojDetail: 0
 
     });
   }
 
   showDet = () =>{
     this.setState({
-      showEdDetail:false
+      showEdDetail:true
     })
     
   }
 
   hideDet = () =>{
     this.setState({
-      showEdDetail:true
+      showEdDetail:false
     })
   }
+showProj=(e)=> {
+  let n = e.target.id;
 
+      this.setState({
+  showprojDetail: n
+  })
+  }
 
   render() {
     return (
@@ -55,7 +67,7 @@ class Cv extends Component {
           <div className="col-md-4 col-sm-4 col-xs-12">
             <Bio />
           </div>
-          <Greeting showEdDetail={this.state.showEdDetail} hideDet={this.hideDet} showDet={this.showDet} />
+          <CondRend showprojDetail={this.state.showprojDetail} showEdDetail={this.state.showEdDetail} showProj={this.showProj} hideDet={this.hideDet} showDet={this.showDet} />
         </div>
       </div>
     );

@@ -7,23 +7,13 @@ class ExtraCurricular extends Component {
 	}
     render(){
     	return(<div>
-    		<div className="black-banner" ><p>Skills</p></div>
+    		<div className="black-banner fix-margin" ><p>Extra Curricular</p></div>
     		
-    		<ul className="col-md-6 col-sm-6 col-xs-6">
-    			<p><strong>Technical</strong></p>
-    			<li>C</li>
-    			<li>java</li>
-    			<li>html</li>
-    			<li>CSS</li>
-    			<li>javascript</li>
-    			<li>react JS</li>
-    		</ul>
-    		
-    		<ul className="col-md-6 col-sm-6 col-xs-6">
-    			<p><strong>Non technical</strong></p>
-    			<li>effortless speaking</li>
-    			<li>team player</li>
-    			<li>creative thinking</li>
+    		<ul>
+    			<li>Photography</li>
+    			<li>Painting</li>
+    			<li>Debating</li>
+    			<li>quizzing</li>
     		</ul>
     		</div>
     		);

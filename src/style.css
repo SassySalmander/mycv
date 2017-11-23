@@ -25,12 +25,21 @@
   .set-margin{
     margin-top: 50px;
   }
+  .fix-margin{
+    margin-top: 12px;
+  }
+}
+
+.proj-box{
+  margin-top: 50px;
 }
 .school-box{
   text-align: center;
+  margin-top: 5px;
 }
 .school-box p{
   margin-bottom: 2px;
+  font-size: 20px;
 }
 .black-banner{
   background-color: black;

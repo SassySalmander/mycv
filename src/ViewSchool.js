@@ -10,40 +10,38 @@ class ViewSchool extends Component {
     		<div className="col-md-6 col-sm-6 col-xs-12">
                 <div className="view-school-box">
                     <div className="school-box">
-                    <div className="black-banner"><p>Master Of Computer Application</p></div>
-                    <img className="text-center" height="150px" width="150x" src="https://bitmesra.ac.in/icem/logo/bitlogo.png" />
-                    <p><strong>Birla Institute Of Technology</strong></p>
-                    <p><strong>2014 - 2017 </strong></p>
-                    <p><strong> 75% </strong></p>
+                    <h2>Master Of Computer Application</h2>
+                    <p>Birla Institute Of Technology</p>
+                    <p>2014 - 2017</p>
+                    <p>75%</p>
                     </div>
                      <div className="school-box">
-                    <div className="black-banner"><p>Bachelor Of Computer Application(WBUT)</p></div>
-                    <img className="text-center" height="150px" width="150x" src="http://www.tha.edu.in/images/THA_Logo.png" />
-                    <p><strong>The Heritage Academy</strong></p>
-                    <p><strong>2011 - 2014 </strong></p>
-                    <p><strong> 76.8% </strong></p>
+                    <h2>Bachelor Of Computer Application(WBUT)</h2>
+                    <p>The Heritage Academy</p>
+                    <p>2011 - 2014 </p>
+                    <p>76.8%</p>
                     </div>
                 </div>
-            </div>
-            <div className="col-md-6 col-sm-6 col-xs-12">
-                <div className="view-school-box">
+                </div>
+                <div className="col-md-6 col-sm-6 col-xs-12">
+                 <div className="view-school-box">
                     <div className="school-box">
-                    <div className="black-banner"><p>12th Standard (CISCE)</p></div>
-                    <img className="text-center" height="100px" width="200x" src="https://pl.respaper.com/160/s.95cf3b4666.jpg" />
-                    <p><strong>Hirendra Leela Patranavis School</strong></p>
-                    <p><strong>2009-2011 </strong></p>
-                    <p><strong> 77% </strong></p>
+                    <h2>12th Standard (CISCE)</h2>
+                    <p>Hirendra Leela Patranavis School</p>
+                    <p>2009-2011</p>
+                    <p>77%</p>
                     </div>
-                     <div className="school-box set-margin">
-                    <div className="black-banner"><p>10th Standard (CISCE)</p></div>
-                    <img className="text-center" height="150px" width="300x" src="https://lycee.edu.in/wp-content/uploads/2017/06/llllll.png" />
-                    <p><strong>Lycee</strong></p>
-                    <p><strong>2009 </strong></p>
-                    <p><strong> 82% </strong></p>
+                     <div className="school-box">
+                    <h2>10th Standard (CISCE)</h2>
+                    <p>Lycee</p>
+                    <p>2009</p>
+                    <p>82%</p>
                     </div>
                 </div>
-            </div>
-            <button className="btn btn-md btn-success" type="button" onClick={this.props.hideDet}>back</button>
+                <button className="btn btn-md btn-success text-center" type="button" onClick={this.props.hideDet}>back</button>
+                    
+                </div>
+            
     		</div>
     		);
     }
